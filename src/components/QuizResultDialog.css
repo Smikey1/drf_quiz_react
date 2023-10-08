@@ -1,0 +1,68 @@
+/* QuizResultDialog.css */
+
+.quiz-selection-dialog {
+  background-color: #d1f0ee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 470px;
+  height: 380px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-selection-dialog h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.quiz-selection-dialog button {
+  padding: 8px;
+  border: none;
+  background-color: #39a6c4;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgb(127, 109, 109);
+  font-size: larger;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.2s;
+  width: auto;
+  cursor: pointer;
+  margin: 10px 15px;
+}
+
+.quiz-selection-dialog button:hover {
+  background-color: #1c8ef9;
+}
+
+.quiz-selection-dialog button:focus {
+  outline: none;
+}
+
+/* Message Container Styles */
+.quiz-selection-dialog div {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #def3ed;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-selection-dialog p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.developer-name {
+  color: red;
+  font-style: italic;
+}
+
+.quiz-types {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: blue;
+}

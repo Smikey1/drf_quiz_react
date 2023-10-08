@@ -1,0 +1,33 @@
+.outer-container {
+  display: flex;
+  justify-content: space-between; /* Horizontal spacing between the containers */
+  max-width: 1200px; /* Optional: Set a max width for the containers */
+  margin: 0 auto; /* Optional: Center the containers horizontally */
+}
+
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.left-container {
+  width: 30%;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.right-container {
+  width: 40%;
+}
+
