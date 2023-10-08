@@ -13,7 +13,7 @@ function NavBar() {
   const isAuthenticated = token !== null;
 
   // Define the Base URL
-  const baseUrl = 'http://127.0.0.1:8000';
+  const baseUrl = 'https://drf-quiz-api.onrender.com';
 
   // Define the data to send in the request body
   const logOutData = {};

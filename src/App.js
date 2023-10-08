@@ -7,7 +7,6 @@ import Register from "./components/Register.js";
 import QuizPage from "./components/QuizPage.js";
 import { Profile } from "./Pages/Profile";
 import { Score } from "./Pages/Score";
-import { Contact } from "./Pages/Contact";
 import NavBar from "./components/NavBar.js";
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
 
           <Route path="/profile" element={token ? <Profile /> : <Navigate to="/login" />} />
           <Route path="/view-score" element={token ? <Score /> : <Navigate to="/login" />} />
-          <Route path="/contact" element={<Contact />} />
           <Route
             path="/login"
             element={token ? <Navigate to="/" /> : <Login />}

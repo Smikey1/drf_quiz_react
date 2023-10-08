@@ -15,7 +15,7 @@ function Quiz() {
     };
 
     useEffect(() => {
-        const baseUrl = 'http://127.0.0.1:8000/question';
+        const baseUrl = 'https://drf-quiz-api.onrender.com/question';
 
         axios.get(`${baseUrl}`)
             .then((res) => {
