@@ -36,7 +36,7 @@ export default function SignUp() {
             .then((res) => {
                 if (res.data.success == true) {
                     success_toast(res.data.message)
-                    window.location.href = "./login";
+                    window.location.href = "/login";
                 } else {
                     alert(res.data.message);
                 }

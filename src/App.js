@@ -26,8 +26,7 @@ function App() {
 
           <Route path="/profile" element={token ? <Profile /> : <Navigate to="/login" />} />
           <Route path="/view-score" element={token ? <Score /> : <Navigate to="/login" />} />
-          <Route
-            path="/login"
+          <Route path="/login"
             element={token ? <Navigate to="/" /> : <Login />}
           />
           <Route
