@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import axios from 'axios'; // Import the Axios library
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { NavLink } from "react-router-dom";
 
 export default function Login() {
     const [username, setUsername] = useState();
@@ -86,7 +87,12 @@ export default function Login() {
                         </button>
                     </div>
                     <p className="forgot-password text-right">
-                        <a href="/register">Sign Up</a>
+                        Doesn't have an account? <NavLink
+                            exact
+                            to="/register"
+                        >
+                            Sign Up Here?
+                        </NavLink>
                     </p>
                 </form>
             </div>

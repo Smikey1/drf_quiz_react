@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import axios from 'axios'; // Import the Axios library
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { NavLink } from "react-router-dom";
 
 export default function SignUp() {
     const [fname, setFname] = useState("");
@@ -119,7 +119,12 @@ export default function SignUp() {
                         </button>
                     </div>
                     <p className="forgot-password text-right">
-                        Already registered <a href="/login">sign in?</a>
+                       Already registered  <NavLink
+                            exact
+                            to="/login"
+                        >
+                            Sign In?
+                        </NavLink>
                     </p>
                 </form>
             </div>
