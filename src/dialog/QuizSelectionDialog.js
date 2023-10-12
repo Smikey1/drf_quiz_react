@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuizSelectionDialog.css'
+import '../dialog/QuizSelectionDialog.css'
 
 const QuizSelectionDialog = ({ onSelectQuizType }) => {
   return (

@@ -99,7 +99,7 @@ export const Profile = () => {
 
             <div>
               <p className="small mb-1" style={{ fontSize: "15px", color: "#1c8ef9", fontWeight: "bold" }}>Average Score</p>
-                <p className="mb-0" style={{ fontSize: "15px", color: "#1f5156", fontWeight: "bold" }}>{setAvegraceScore}</p>
+                <p className="mb-0" style={{ fontSize: "15px", color: "#1f5156", fontWeight: "bold" }}>{percentScore.toString() == "NaN" ? "" : setAvegraceScore}</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import axios from 'axios'; // Import the Axios library
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,7 +27,7 @@ export default function SignUp() {
     };
 
     const success_toast = message => { toast(message) };
-    const error_toast = message => { toast.error(message) };
+    // const error_toast = message => { toast.error(message) };
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -2,9 +2,9 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./components/Login.js";
-import Register from "./components/Register.js";
-import QuizPage from "./components/QuizPage.js";
+import Login from "./Pages/Login.js";
+import Register from "./Pages/Register.js";
+import Home from "./Pages/Home.js";
 import { Profile } from "./Pages/Profile";
 import { Score } from "./Pages/Score";
 import NavBar from "./components/NavBar.js";
@@ -20,7 +20,7 @@ function App() {
           <Route
             path="/"
             element={
-              token ? <QuizPage /> : <Navigate to="/login" />
+              token ? <Home /> : <Navigate to="/login" />
             }
           />
 

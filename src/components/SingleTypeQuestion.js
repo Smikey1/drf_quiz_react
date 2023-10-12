@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import { QuizData } from '../Data/QuizData';
-import QuizResultDialog from '../components/QuizResultDialog';
-import './QuizPage.css';
-import './QuizSelectionDialog.css';
+import QuizResultDialog from '../dialog/QuizResultDialog';
+import '../Pages/Home.css';
+import '../dialog/QuizSelectionDialog.css';
 import { ToastContainer, toast } from 'react-toastify';
 
 function SingleTypeQuestion(props) {

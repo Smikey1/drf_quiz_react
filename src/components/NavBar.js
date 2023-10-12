@@ -28,7 +28,7 @@ function NavBar() {
         if (res.data.success == true) {
           success_toast(res.data.message)
           window.localStorage.clear();
-          window.location.href = "/login";
+          window.location.href = "/";
         } else {
           error_toast(res.data.message);
         }

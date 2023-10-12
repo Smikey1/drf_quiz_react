@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import QuizResultDialog from '../components/QuizResultDialog';
-import './QuizPage.css';
-import './QuizSelectionDialog.css';
+import QuizResultDialog from '../dialog/QuizResultDialog';
+import '../Pages/Home.css';
+import '../dialog/QuizSelectionDialog.css';
 import { ToastContainer, toast } from 'react-toastify';
 
 function evaluateMultipleChoice(questionData, selectedOptions) {

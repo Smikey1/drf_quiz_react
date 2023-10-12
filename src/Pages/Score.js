@@ -11,7 +11,7 @@ export const Score = () => {
 
   useEffect(() => {
     // Define the Base URL
-    const baseUrl = 'https://drf-quiz-api.onrender.com/';
+    const baseUrl = 'https://drf-quiz-api.onrender.com';
 
     const token = window.localStorage.getItem('token');
 
