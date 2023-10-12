@@ -36,7 +36,8 @@ export default function SignUp() {
             .then((res) => {
                 if (res.data.success == true) {
                     success_toast(res.data.message)
-                    window.location.href = "/login";
+                    // just to render login page in deployment
+                    window.location.href = "/";
                 } else {
                     alert(res.data.message);
                 }
@@ -119,7 +120,7 @@ export default function SignUp() {
                         </button>
                     </div>
                     <p className="forgot-password text-right">
-                       Already registered  <NavLink
+                        Already registered  <NavLink
                             exact
                             to="/login"
                         >
